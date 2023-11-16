@@ -59,17 +59,27 @@
     #image-title-section img {
       max-width: 50%;
       margin-right: 20px;
+      border-radius: 15px;
     }
-
+    #image-title-section img:hover {
+  transform: rotateX(180deg); 
+}
 
     #logo-row {
-      background-color: #aed6f1;
-    }
+  background-color: #aed6f1;
+  text-align: center;
+}
 
-    #logo-row img {
-      max-width: 20%;
-      margin: 10px;
-    }
+#logo-row img {
+  max-width: 20%;
+  margin: 10px;
+  transition: transform 0.3s; 
+}
+
+/* Hover efekti mouse ile üzerlerine gelince 0.3 saniye içinde 1.2 lik bir büyüme efekti ekler */
+#logo-row img:hover {
+  transform: scale(1.2); 
+}
 
 
     #footer {
@@ -105,7 +115,7 @@
 
 
   <section id="logo" class="common-section">
-    <img src="https://picsum.photos/100/100" alt="Italian Trulli">
+    <img src="https://picsum.photos/100/100" alt="randomPic">
     <h1>Logo</h1>
   </section>
 
@@ -121,7 +131,7 @@
 
   <section id="image-title-section" class="common-section">
     
-    <img src="https://picsum.photos/200/300" alt="Görsel">
+    <img src="https://picsum.photos/200/300" alt="randomPic">
     <div>
       <h2>Test</h2>
       <p>Test Website.</p>
